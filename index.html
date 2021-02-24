@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Solana</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="inicio">
+    <div class="wrapper-header">
+      <div class="wrapper-nav">
+        <div class="logo">
+          <span>Pablo Solana </span>
+          <ul>
+            <li><a href="#inicio">Hola</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="cv">
+          <button>Descargar currículum</button>
+        </div>
+      </div>
+      <div id="hola" class="hola">
+        <div class="hola-msj">
+          <h1>¡Hola a todos!<br> Soy Pablo Solana</h1>
+          <h2>Developer que le encanta implementar diseños que
+            inspiran y atraen a las personas.</h2>
+            <a href="#proyectos">
+              <img class="arrow-down" src="./img/icons/arrow-down.svg" alt="arrow down">
+            </a>
+          </div>
+          <div class="hola-img">
+            <img src="./img/profile.png" alt="Pablo Solana Photo" width="495">
+          </div>
+        </div>
+      </div>
+  </header>
+<div class="hero">
+  <div class="wrapper-hero">
+
+    <div class="proyectos" id="proyectos">
+      <div class="proyectos-msj-izq">
+        <h2>Parece magia, funciona con código.</h2>
+      </div>
+      <div class="proyectos-msj-der">
+        <h3>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles.</h3>
+      </div>
+      <div class="proyectos-detalles">
+        <div class="huertogram">
+          <h5>Huertogram</h5> <br>
+          <p>Proyecto con ReactJS utilizando hooks para el control de estados y sesiones, en el Backend los servicios de Google Firebase: Hosting, firestore, storage y authentication muestranas fotos de mi huerto urbano. </p>
+          <br>
+          <button class="btn-primary" type="submit" formaction="https://github.com/juanpablosolana/elisa-porfolio">Ver proyecto completo</button>
+          <button class="btn-secondary" type="submit" formaction="https://juanpablosolana.github.io/elisa-porfolio/">Ver código</button>
+
+        </div>
+      </div>
+      <div class="proyectos-detalles-min-izq">
+        <div class="elisa">
+          <h5>Portafolio Elisa</h5> <br>
+          <p>Maquetado HTML y CSS del proyecto Elisa de https://leonidasesteban.com/proyectos/portafolio-elisa  </p>
+          <br>
+          <button class="btn-primary" type="submit" formaction="https://huertogram.com">Ver proyecto completo</button>
+          <button class="btn-secondary" type="submit" formaction="https://github.com/juanpablosolana/huertogram">Ver
+            código</button>
+          </div>
+        </div>
+
+        <div class="proyectos-detalles-min-der">
+          <div class="xml">
+            <h5>XML CFDI 3.3 a vista web</h5> <br>
+            <p>Carga un XML CFDI 3.3 del SAT MX y muestra los campos de forma legibles en la pantalla</p>
+            <br>
+            <button class="btn-primary" type="submit" formaction="https://juanpablosolana.github.io/datos-xml/">Ver proyecto completo</button>
+            <button class="btn-secondary" type="submit" formaction="https://github.com/juanpablosolana/datos-xml">Ver
+              código</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="servicios" id="servicios">
+          <div class="wrapper-servicios">
+            <h2>Servicios</h2>
+            <div class="servicios-izq">
+              <h4>Diseño</h4>
+              <ul>
+                <li>Expepriencia de usuario</li>
+                <li>Interfaz de usuario</li>
+                <li>Aplicaciones web</li>
+                <li>Prueba de concepto</li>
+              </ul>
+            </div>
+            <div class="servicios-cnt">
+              <h4>Desarrollo</h4>
+              <ul>
+                <li>Aplicaciones móviles</li>
+                <li>Backend con capa gratuita de Google Firebase</li>
+                <li>Sitios web</li>
+                <li>Aplicaciones web progresivas</li>
+              </ul>
+            </div>
+            <div class="servicios-der">
+              <h4>Cloud</h4>
+              <ul>
+                <li>Backend en capa gratuita de AWZ</li>
+                <li>Hosting en capa gratuita de Google Firebase</li>
+              </ul>
+            </div>
+          </div>
+          <div class="servicios-img">
+          </div>
+        </div>
+        <div class="contacto" id="contacto">
+            <div class="wrapper-contacto">
+              <form class="contact-form">
+                <h2>Contacto</h2>
+                <span>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto.</span>
+                <input type="text" name="name" placeholder="Ingresa tu nombre" id="" title="Nombre"
+                  patter="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input type="email" name="email" id="" placeholder="tu correo" title="email no valido"
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <textarea name="coments" cols="50" rows="10" placeholder="tus comentarios" required></textarea>
+                <div class="contact-form-loader text-center none">
+                  <img src="./assets/loader.svg" alt="Enviando">
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn">
+              </form>
+            </div>
+        </div>
+        <footer>
+          <div class="wrapper-footer">
+            <div class="footer-logo">
+              <span>Pablo Solana </span>
+            </div>
+            <div class="footer-msj">
+              <h3>
+                Hecho con
+                <img src="./img/icons/icon-heart_outline.svg" alt="cora">
+                . Copyright 2021 - Todos los derechos reservados.
+              </h3>
+              </div>
+              <div class="footer-media">
+                <a href="https://github.com/juanpablosolana/" target="_blank"><img src="./img/icons/icon-github.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/juan-pablo-solana-ortiz/" target="_blank"><img src="./img/icons/linkedin.svg"></a>
+              </div>
+        </footer>
+</div>
+</body>
+</html>
