@@ -88,17 +88,20 @@ li {
 
 .cv {
   margin-inline-end: 1px;
+  width: 206px;
+  height: 48px;
+  line-height: 48px;
+  background: var(--yellow);
+  justify-content: center;
+  text-align: center;
 }
 
-.cv button {
-  background: var(--yellow);
+.cv a {
   color: var(--wtihe);
   font-family: var(--fontNunito);
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  width: 206px;
-  height: 48px;
   border: none;
 }
 
@@ -269,7 +272,7 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 15px;
   position: static;
   width: 215px;
   height: 48px;
@@ -285,24 +288,22 @@ li {
 }
 
 .btn-secondary {
-  /* /BUTTON */
-  background: none;
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  width: 215px;
-  height: 48px;
+  /* padding-block: 50px; */
   left: 0px;
   top: 0px;
   /* identical to box height, or 150% */
   text-align: center;
   /* /button/background */
   color: #FF8906;
+  border: 1px solid#FF8906;
+  ;
   /* Inside Auto Layout */
-  flex: none;
-  order: 0;
+  padding: 15px;
 }
 
 .servicios {
@@ -321,6 +322,7 @@ li {
   letter-spacing: -0.005em;
   color: var(--black);
   margin-inline-start: 107px;
+  margin-block: 80px;
 }
 
 .servicios ol {
@@ -482,7 +484,4 @@ footer h3 {
   letter-spacing: 0.01em;
   /* headline */
   color: #FFFFFE;
-}
-.wrapper-footer-msj img{
-  margin-block-start: 5px;
 }
