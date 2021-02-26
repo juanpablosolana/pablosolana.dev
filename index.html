@@ -44,7 +44,6 @@
   </header>
 <div class="hero">
   <div class="wrapper-hero">
-
     <div class="proyectos" id="proyectos">
       <div class="proyectos-msj-izq">
         <h2>Parece magia, funciona con código.</h2>
@@ -58,11 +57,8 @@
             <h5>Huertogram</h5> <br>
             <p>Proyecto con ReactJS utilizando hooks para el control de estados y sesiones, en el Backend los servicios de Google Firebase: Hosting, firestore, storage y authentication muestranas fotos de mi huerto urbano. </p>
             <br>
-            <!-- <button class="btn-primary" type="submit" formaction="https://github.com/juanpablosolana/elisa-porfolio">Ver proyecto completo</button> -->
             <a href="https://huertogram.com" target="_blank" class="btn-primary">Ver el proyecto completo</a>
-            <!-- <button class="btn-secondary" type="submit" formaction="https://juanpablosolana.github.io/elisa-porfolio/">Ver código</button> -->
             <a href="https://github.com/juanpablosolana/huertogram" target="_blank" class="btn-secondary">Ver código</a>
-
           </div>
         </div>
       </div>
@@ -88,7 +84,7 @@
             <p>Carga un XML CFDI 3.3 del SAT MX y muestra los campos de forma legibles en la pantalla</p>
             <br>
             <!-- <button class="btn-primary" type="submit" formaction="https://juanpablosolana.github.io/datos-xml/">Ver proyecto completo</button> -->
-            <a href="https://juanpablosolana.github.io/datos-xml/" target="_blank" class="btn-primary">Ver proyecto completo<</a>
+            <a href="https://juanpablosolana.github.io/datos-xml/" target="_blank" class="btn-primary">Ver proyecto completo</a>
             <!-- <button class="btn-secondary" type="submit" formaction="https://github.com/juanpablosolana/datos-xml">Ver
               código</button> -->
               <a href="https://github.com/juanpablosolana/datos-xml" target="_blank" class="btn-secondary">Ver código</a>
@@ -140,13 +136,32 @@
                 <input type="email" name="email" id="" placeholder="tu correo" title="email no valido"
                   pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                 <textarea name="coments" cols="50" rows="10" placeholder="tus comentarios" required></textarea>
-                <div class="contact-form-loader text-center none">
+                <div class="contact-form-loader">
                   <img src="./assets/loader.svg" alt="Enviando">
                 </div>
-                <input type="submit" value="Enviar mensaje" class="btn">
+                <input type="submit" value="Enviar mensaje" class="btn-contact">
               </form>
+              <article id="gracias" class="modal">
+                <div class="modal-content">
+                  <article class="contact-form-response">
+                    <h3>Muchas gracias por tus comentarios</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+                      <path
+                        d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                      <path
+                        d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+                    </svg>
+                  </article>
+                </div>
+              </article>
+              <div class="top">
+                <a href="#top">
+                  <img src="./img/icons/arrow-down.svg" alt="arrow top">
+                </a>
+              </div>
+              </div>
             </div>
-        </div>
         <footer>
           <div class="wrapper-footer">
             <div class="footer-logo">
@@ -163,6 +178,7 @@
                 <a href="https://github.com/juanpablosolana/" target="_blank"><img src="./img/icons/icon-github.svg" alt="github"></a>
               </div>
         </footer>
-</div>
+        </div>
 </body>
+<script src="./app.js"></script>
 </html>
