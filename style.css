@@ -589,21 +589,35 @@ footer h3 {
     /* border: 1px solid red; */
     display: block;
   }
-  .wrapper-header, .wrapper-hero, .wrapper-servicios, .wrapper-contacto, .wrapper-footer, .wrapper-proyectos-detalle, .wrapper-min, .huertogram, .wrapper-nav {
+  .wrapper-header, .wrapper-hero, .wrapper-servicios, .wrapper-contacto, .huertogram{
     width: 100%;
     /* padding: 20px; */
   }
-  .arrow-down, .top, .hola-img {
+  .wrapper-proyectos-detalle, .wrapper-min{
+    width: 100%;
+  }
+  .arrow-down, .top, .hola-img{
     display: none;
     visibility: hidden;
     width: 0;
   }
   .hola {
-    width: 100%;
-    margin: auto;
-    padding-inline: 0;
+    width: 400px;
+    margin-inline-start: 10px;
+    padding: 0;
   }
-  .huertogram, .elisa, .xml{
+  .hola img{
+    margin:0;
+    padding:0;
+    width: 100%;
+    /* border-radius: 50%; */
+  }
+  .hola-img, .hola-msj{
+    width: 380px;
+    padding-block-end: 0;
+    margin:0;
+  }
+  .huertogram, .elisa, .xml {
     display: inline;
     width: 300px;
     padding-block-end: 100px;
@@ -632,11 +646,13 @@ footer h3 {
     width: 350px;
     margin-inline: 0;
   }
-  .wrapper-proyectos-detalle{
+  .wrapper-proyectos-detalle {
     margin-block-end: 56px;
   }
-  .wrapper-nav{
+  .wrapper-nav {
     margin-block-end: 0;
+    margin:0;
+    padding:20px;
   }
   h1 {
     font-size: 32px;
@@ -644,8 +660,7 @@ footer h3 {
   h2 {
     font-size: 20px;
   }
-  * {
+  .cv {
     margin: 0;
-    padding: 0;
   }
 }
